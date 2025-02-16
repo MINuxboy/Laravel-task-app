@@ -7,6 +7,7 @@
  <title>
     @yield("title")
  </title>    
+ @vite(['resources/js/app.js', 'resources/css/app.css', 'resources/scss/app.scss'])
 </head>
 <body>
     <div class="container-fluid">
@@ -17,4 +18,7 @@
     </div>
     
 </body>
+
+@stack('scripts')
+
 </html>
